@@ -1,0 +1,25 @@
+# Provider
+yandex_token = ""
+default_zone = "ru-central1-a"
+
+# Common
+cloud_id  = ""
+folder_id = ""
+
+cidr_blocks = [
+  ["10.10.0.0/16"],
+  ["10.20.0.0/16"],
+]
+
+labels = {
+  "team" = "my-team"
+  "app"  = "my-app"
+}
+
+#Cluster
+k8s_version     = "1.29"
+number_of_nodes = 1
+node_memory     = 4
+node_cores      = 2
+node_disk_size  = 32
+node_disk_type  = "network-hdd"
